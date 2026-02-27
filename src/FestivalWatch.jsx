@@ -38,6 +38,8 @@ const RESPONSIVE_STYLES = `
     background: #FFFBF0; color: #1C1917;
     font-family: 'Nunito', sans-serif;
     overflow-x: hidden;
+    text-align: left;
+    -webkit-tap-highlight-color: transparent;
   }
 
   /* ── Header ── */
@@ -49,10 +51,11 @@ const RESPONSIVE_STYLES = `
   }
   .fw-header-inner {
     max-width: 1100px; margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 20px;
     display: flex; align-items: center; justify-content: space-between;
     height: 56px; gap: 8px;
   }
+  @media (min-width: 640px) { .fw-header-inner { padding: 0 24px; } }
   .fw-logo { display: flex; align-items: center; gap: 8px; flex-shrink: 0; min-width: 0; }
   .fw-logo-icon {
     width: 32px; height: 32px; border-radius: 10px; flex-shrink: 0;
@@ -81,7 +84,7 @@ const RESPONSIVE_STYLES = `
   /* ── Hero ── */
   .fw-hero {
     max-width: 1100px; margin: 0 auto;
-    padding: 24px 16px 20px;
+    padding: 28px 20px 24px;
     border-bottom: 2px dashed #FDE68A;
   }
   @media (min-width: 640px) { .fw-hero { padding: 44px 24px 32px; } }
@@ -97,7 +100,7 @@ const RESPONSIVE_STYLES = `
   @media (min-width: 640px) { .fw-hero p { font-size: 15px; } }
 
   /* ── Controls ── */
-  .fw-controls { max-width: 1100px; margin: 0 auto; padding: 14px 16px 0; }
+  .fw-controls { max-width: 1100px; margin: 0 auto; padding: 18px 20px 0; }
   @media (min-width: 640px) { .fw-controls { padding: 22px 24px 0; } }
 
   /* Search row: stacked on mobile, side-by-side on wider */
@@ -139,7 +142,7 @@ const RESPONSIVE_STYLES = `
   .fw-result-count { font-size: 12px; color: #A8A29E; font-weight: 600; margin-bottom: 12px; }
 
   /* ── Festival grid ── */
-  .fw-main { max-width: 1100px; margin: 0 auto; padding: 0 16px 80px; }
+  .fw-main { max-width: 1100px; margin: 0 auto; padding: 0 20px 60px; }
   @media (min-width: 640px) { .fw-main { padding: 0 24px 80px; } }
 
   /* 1 col → 2 col → 3 col */
@@ -150,7 +153,7 @@ const RESPONSIVE_STYLES = `
   /* ── Card ── */
   .fw-card {
     background: #fff; border: 2px solid #FDE68A; border-radius: 18px;
-    padding: 16px; display: flex; flex-direction: column; gap: 10px;
+    padding: 18px; display: flex; flex-direction: column; gap: 10px;
     transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
     min-width: 0; overflow: hidden;
   }
@@ -211,7 +214,8 @@ const RESPONSIVE_STYLES = `
   .fw-submit-btn:active { transform: scale(0.97); }
 
   /* ── Footer ── */
-  .fw-footer { border-top: 2px dashed #FDE68A; padding: 20px 16px; text-align: center; background: #FFFBF0; }
+  .fw-footer { border-top: 2px dashed #FDE68A; padding: 24px 20px; text-align: center; background: #FFFBF0; }
+  @media (min-width: 640px) { .fw-footer { padding: 28px 24px; } }
   .fw-footer p { margin: 0; font-size: 12px; color: #A8A29E; font-weight: 600; }
 `;
 
