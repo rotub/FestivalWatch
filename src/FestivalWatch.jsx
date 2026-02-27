@@ -278,18 +278,6 @@ function FestivalCard({ festival, saved, onToggleSave }) {
           </div>
           <h3 className="fw-card-name">{festival.name}</h3>
         </div>
-        <button
-          onClick={() => onToggleSave(festival.id)}
-          className="fw-star"
-          title={saved ? "Remove" : "Save"}
-          style={{
-            background: saved ? "#FEF3C7" : "#FAFAF9",
-            border: `2px solid ${saved ? "#FCD34D" : "#E7E5E4"}`,
-            color: saved ? "#D97706" : "#A8A29E",
-          }}
-        >
-          {saved ? "★" : "☆"}
-        </button>
       </div>
 
       {/* Description — only show if not a raw URL */}
