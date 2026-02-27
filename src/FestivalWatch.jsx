@@ -34,7 +34,7 @@ const RESPONSIVE_STYLES = `
   @keyframes spin { to { transform: rotate(360deg); } }
 
   .fw-root {
-    width: 100%; min-height: 100vh;
+    width: 100%; max-width: 100vw; min-height: 100vh;
     background: #FFFBF0; color: #1C1917;
     font-family: 'Nunito', sans-serif;
     overflow-x: hidden;
@@ -100,7 +100,7 @@ const RESPONSIVE_STYLES = `
   @media (min-width: 640px) { .fw-hero p { font-size: 15px; } }
 
   /* ── Controls ── */
-  .fw-controls { max-width: 1100px; margin: 0 auto; padding: 18px 20px 0; }
+  .fw-controls { max-width: 1100px; margin: 0 auto; padding: 18px 20px 0; overflow: hidden; }
   @media (min-width: 640px) { .fw-controls { padding: 22px 24px 0; } }
 
   /* Search row: stacked on mobile, side-by-side on wider */
@@ -142,20 +142,20 @@ const RESPONSIVE_STYLES = `
   .fw-result-count { font-size: 12px; color: #A8A29E; font-weight: 600; margin-bottom: 12px; }
 
   /* ── Festival grid ── */
-  .fw-main { max-width: 1100px; margin: 0 auto; padding: 0 20px 60px; }
+  .fw-main { max-width: 1100px; margin: 0 auto; padding: 0 20px 60px; overflow: hidden; }
   @media (min-width: 640px) { .fw-main { padding: 0 24px 80px; } }
 
   /* 1 col → 2 col → 3 col */
-  .fw-grid { display: grid; grid-template-columns: 1fr; gap: 12px; width: 100%; }
-  @media (min-width: 560px) { .fw-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; } }
-  @media (min-width: 920px) { .fw-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; } }
+  .fw-grid { display: grid; grid-template-columns: 1fr; gap: 14px; width: 100%; max-width: 100%; }
+  @media (min-width: 700px) { .fw-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) { .fw-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; } }
 
   /* ── Card ── */
   .fw-card {
     background: #fff; border: 2px solid #FDE68A; border-radius: 18px;
     padding: 18px; display: flex; flex-direction: column; gap: 10px;
     transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
-    min-width: 0; overflow: hidden;
+    min-width: 0; max-width: 100%; overflow: hidden;
   }
   .fw-card:hover {
     border-color: #FDBA74; transform: translateY(-2px);
@@ -164,13 +164,13 @@ const RESPONSIVE_STYLES = `
   .fw-card-closed { opacity: 0.5; }
   @media (min-width: 640px) { .fw-card { padding: 20px; } }
 
-  .fw-card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; min-width: 0; }
+  .fw-card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; min-width: 0; max-width: 100%; }
   .fw-card-title-area { flex: 1; min-width: 0; }
   .fw-card-badges { display: flex; align-items: center; gap: 5px; margin-bottom: 5px; flex-wrap: wrap; }
   .fw-card-name {
     margin: 0; font-size: 15px; font-weight: 800; color: #1C1917;
     font-family: 'Nunito', sans-serif; line-height: 1.25;
-    overflow-wrap: break-word; word-break: break-word;
+    overflow-wrap: anywhere; word-break: break-word;
   }
   @media (min-width: 480px) { .fw-card-name { font-size: 17px; } }
 
@@ -185,7 +185,7 @@ const RESPONSIVE_STYLES = `
     margin: 0; font-size: 13px; color: #78716C; line-height: 1.6;
     overflow: hidden; display: -webkit-box;
     -webkit-line-clamp: 3; -webkit-box-orient: vertical;
-    overflow-wrap: break-word; word-break: break-word;
+    overflow-wrap: anywhere; word-break: break-word;
   }
 
   .fw-tags { display: flex; flex-wrap: wrap; gap: 4px; }
