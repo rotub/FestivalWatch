@@ -442,9 +442,9 @@ export default function FestivalWatch() {
           {" "}🚀
         </h1>
         <p>
-          Curated from the HTMAG community spreadsheet.
-          Browse open submissions, apply, and get your game seen.
-          Created by @rotubo with ❤️ for indie devs.
+          Curated from the HTMAG community spreadsheet.<br />
+          Browse open submissions, apply, and get your game seen.<br />
+          Created by <a href="https://x.com/rotub" target="_blank">@rotub</a> with ❤️ for indie devs.
         </p>
       </div>
 
