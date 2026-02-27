@@ -441,11 +441,6 @@ export default function FestivalWatch() {
           </span>
           {" "}🚀
         </h1>
-        <p>
-          Curated from the HTMAG community spreadsheet.<br />
-          Browse open submissions, apply, and get your game seen.<br />
-          Created by <a href="https://x.com/rotub" target="_blank">@rotub</a> with ❤️ for indie devs.
-        </p>
       </div>
 
       {/* Grid */}
@@ -473,10 +468,16 @@ export default function FestivalWatch() {
       {/* Footer */}
       <footer className="fw-footer">
         <p>
+          Created by <a href="https://x.com/rotub" target="_blank" rel="noopener noreferrer"
+            style={{ color: "#D97706", textDecoration: "underline", fontWeight: 700 }}>
+            @rotub
+          {" "}</a>with ❤️ for indie devs.
+        </p>
+        <p>
           Data sourced from the{" "}
           <a href="https://howtomarketagame.com/festivals" target="_blank" rel="noopener noreferrer"
             style={{ color: "#D97706", textDecoration: "underline", fontWeight: 700 }}>
-            HTMAG Worthy Festivals Spreadsheet
+            HTMAG community spreadsheet
           </a>
           {" "}by Chris Zukowski & community. 🎮
         </p>
