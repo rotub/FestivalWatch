@@ -392,7 +392,7 @@ export default function FestivalWatch() {
         <div className="fw-header-inner">
           <div className="fw-logo">
             <div className="fw-logo-icon">🎮</div>
-            <span className="fw-logo-text">FestivalWatch</span>
+            <span className="fw-logo-text">Festival Watch</span>
             <span className="fw-beta">BETA</span>
           </div>
           <div className="fw-stats">
@@ -422,7 +422,7 @@ export default function FestivalWatch() {
           🎪 Indie Game Festival Directory
         </div>
         <h1>
-          Find your next<br />
+          Find your indie game's next<br />
           <span style={{ background: "linear-gradient(90deg, #F59E0B, #EF4444)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
             festival showcase.
           </span>
