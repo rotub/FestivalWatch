@@ -442,46 +442,10 @@ export default function FestivalWatch() {
           {" "}🚀
         </h1>
         <p>
-          Curated from the HTMAG community spreadsheet. Browse open submission windows, filter by what matters, and get your game seen.
+          Curated from the HTMAG community spreadsheet.
+          Browse open submissions, apply, and get your game seen.
+          Created by @rotubo with ❤️ for indie devs.
         </p>
-      </div>
-
-      {/* Controls */}
-      <div className="fw-controls">
-        <div className="fw-search-row">
-          <div className="fw-search-wrap">
-            <span className="fw-search-icon">🔍</span>
-            <input
-              className="fw-search-input"
-              value={search}
-              onChange={e => setSearch(e.target.value)}
-              placeholder="Search festivals..."
-            />
-          </div>
-          <select className="fw-sort-select" value={sortBy} onChange={e => setSortBy(e.target.value)}>
-            <option value="deadline">⏰ By Deadline</option>
-            <option value="name">🔤 By Name</option>
-            <option value="price">💚 Free First</option>
-          </select>
-        </div>
-
-        <div className="fw-pills-scroll">
-          <div className="fw-pills-inner">
-            <Pill label={`All (${festivals.length})`} active={activeTab === "all"} onClick={() => setActiveTab("all")} activeColor="#F59E0B" />
-            <Pill label={`★ Saved (${savedIds.size})`} active={activeTab === "saved"} onClick={() => setActiveTab("saved")} activeColor="#EF4444" />
-            <div className="fw-pill-divider" />
-            <Pill label="📦 All Types" active={filterType === "All"} onClick={() => setFilterType("All")} activeColor="#8B5CF6" />
-            <Pill label="💻 Digital" active={filterType === "Digital Expo"} onClick={() => setFilterType("Digital Expo")} activeColor="#8B5CF6" />
-            <Pill label="🏆 Awards" active={filterType === "Digital Awards"} onClick={() => setFilterType("Digital Awards")} activeColor="#8B5CF6" />
-            <Pill label="🎪 Physical" active={filterType === "Physical Expo"} onClick={() => setFilterType("Physical Expo")} activeColor="#8B5CF6" />
-            <div className="fw-pill-divider" />
-            <Pill label="💚 Free" active={filterFree} onClick={() => setFilterFree(v => !v)} activeColor="#10B981" />
-            <Pill label="🎮 Steam" active={filterSteam} onClick={() => setFilterSteam(v => !v)} activeColor="#3B82F6" />
-            <Pill label="✓ Open" active={filterOpen} onClick={() => setFilterOpen(v => !v)} activeColor="#F59E0B" />
-          </div>
-        </div>
-
-        <div className="fw-result-count">{filtered.length} festival{filtered.length !== 1 ? "s" : ""}</div>
       </div>
 
       {/* Grid */}
