@@ -85,7 +85,6 @@ const RESPONSIVE_STYLES = `
   .fw-hero {
     max-width: 1100px; margin: 0 auto;
     padding: 28px 20px 24px;
-    border-bottom: 2px dashed #FDE68A;
   }
   @media (min-width: 640px) { .fw-hero { padding: 44px 24px 32px; } }
   .fw-hero h1 {
