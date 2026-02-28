@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from "react";
 import { supabase } from "./supabase";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/react"
 
 const TAG_COLORS = {
   "puzzle":         { bg: "#FEF3C7", color: "#92400E", border: "#FDE68A" },
